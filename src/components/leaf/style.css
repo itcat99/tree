@@ -1,0 +1,60 @@
+.leaf{
+  cursor: pointer;
+  /* background-color: rgba(0, 0, 0, .3); */
+}
+
+.leaf-inner {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 4px;
+  box-sizing: border-box;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  transition: background-color 300ms;
+  border: 1px solid #616161;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+
+.leaf:hover>.leaf-inner {
+  transition: background-color 300ms;
+  background-color: azure;
+}
+
+.leaf-input {
+  display: none;
+}
+
+.leaf-title {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.leaf-inner .iconfont {
+  font-size: 15px;
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  color: blueviolet;
+}
+
+.rendered{
+  animation: flash 100ms;
+  animation-fill-mode: backwards;
+}
+
+@keyframes flash{
+  0%{
+    background-color: transparent;
+  }
+
+  50%{
+    background-color: lightcoral;
+  }
+
+  100%{
+    background-color: transparent;
+  }
+}
